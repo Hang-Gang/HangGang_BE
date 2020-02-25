@@ -8,7 +8,7 @@ server.use(cors())
 server.use(helmet())
 
 server.get('/', (req, res) => {
-    res.status(200).send("We Are Live")
+    res.status(200).send("You are connected")
 })
 
 module.exports = server

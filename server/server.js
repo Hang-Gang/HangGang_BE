@@ -12,6 +12,9 @@ server.use(helmet())
 const userRouter = require('../routers/user')
 server.use('/api/user', userRouter)
 
+const productsRouter = require('../routers/products')
+server.use('/api/products', productsRouter)
+
 
 server.get('/', (req, res) => {
     res.status(200).send("You are connected")
